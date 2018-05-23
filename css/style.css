@@ -1,0 +1,48 @@
+.circle{
+	width:  400px;
+	height:  400px;
+	outline: 1px solid #00ff00;
+	font-size: 0;
+	border-radius:50%;
+	overflow: hidden;
+
+	position: absolute;
+	top:  50%;
+	left: 50%;
+	transform:  translate(-50%, -50%)
+}
+.circle div{
+	display:  inline-block;
+	width:  50%;
+	height:  50%;
+	outline:  1px solid #0000ff;
+}
+.circle div:nth-child(1){
+	background: #00ff00;
+	border-bottom-left-radius: 95%;
+	border-top-left-radius: 10%;
+    border-top-right-radius: 95%;
+    border-bottom-right-radius: 0;
+}
+.circle div:nth-child(2){
+	background: #0000FF;
+	border-bottom-left-radius: 0;
+	border-top-right-radius: 10%;
+    border-bottom-right-radius: 95%;
+    border-top-left-radius: 95%;
+}
+.circle div:nth-child(3){
+	background: #ff0000;
+	border-top-right-radius: 0;
+	border-top-left-radius: 95%;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 95%;
+}
+.circle div:nth-child(4){
+	background: #ff00ff;
+	border-top-left-radius: 0;
+	border-top-right-radius: 95%;
+    border-bottom-left-radius: 95%;
+    border-bottom-right-radius: 10%;
+
+}
